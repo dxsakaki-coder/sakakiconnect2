@@ -28,7 +28,7 @@
                             dark: '#9f1239',    // 深みのあるローズ
                         },
                         secondary: '#059669', // 落ち着いたエメラルドグリーン
-                        dark: '0f172a',      // より洗練されたダークネイビー
+                        dark: '#0f172a',      // より洗練されたダークネイビー
                         light: '#fcfcfd',     // わずかに温かみのある白
                         surface: '#ffffff',
                     },
@@ -160,20 +160,12 @@
                         町からのお知らせ、ごみ出しカレンダー、防災マップから電子申請まで。日々の生活に役立つ情報が、あなたのスマートフォンに美しくまとまります。
                     </p>
                     
-                    <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
-                        <a href="#download" class="group flex items-center justify-center gap-3 bg-dark text-white px-7 py-3.5 rounded-2xl font-en font-semibold transition-all duration-300 shadow-float hover:shadow-xl hover:-translate-y-1 w-full sm:w-auto">
-                            <i class="fab fa-apple text-2xl group-hover:scale-110 transition-transform"></i>
-                            <div class="text-left leading-tight">
-                                <span class="text-[9px] block text-slate-400 font-medium tracking-wide">Download on the</span>
-                                <span class="text-base">App Store</span>
-                            </div>
+                    <div class="flex flex-row flex-wrap justify-center lg:justify-start gap-4 items-center">
+                        <a href="#download" class="inline-block transition-transform hover:-translate-y-1 hover:opacity-90">
+                            <img src="appstore_badge.svg" alt="Download on the App Store" class="h-12 sm:h-14 w-auto object-contain" onerror="this.src='https://placehold.co/160x50/0f172a/ffffff?text=App+Store'">
                         </a>
-                        <a href="#download" class="group flex items-center justify-center gap-3 bg-white text-dark border border-slate-200 px-7 py-3.5 rounded-2xl font-en font-semibold transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-1 w-full sm:w-auto">
-                            <i class="fab fa-google-play text-2xl text-slate-700 group-hover:scale-110 transition-transform"></i>
-                            <div class="text-left leading-tight">
-                                <span class="text-[9px] block text-slate-500 font-medium tracking-wide">GET IT ON</span>
-                                <span class="text-base">Google Play</span>
-                            </div>
+                        <a href="#download" class="inline-block transition-transform hover:-translate-y-1 hover:opacity-90">
+                            <img src="googleplay_badge.svg" alt="GET IT ON Google Play" class="h-12 sm:h-14 w-auto object-contain" onerror="this.src='https://placehold.co/160x50/0f172a/ffffff?text=Google+Play'">
                         </a>
                     </div>
                     
@@ -526,23 +518,15 @@
                 坂城町での快適な暮らしのために、ぜひインストールしてください。
             </p>
             
-            <div class="flex flex-col sm:flex-row justify-center gap-5">
+            <div class="flex flex-row flex-wrap justify-center gap-4 sm:gap-6 items-center">
                 <!-- App Store -->
-                <a href="#" class="group flex items-center justify-center gap-3 bg-dark text-white px-8 py-4 rounded-2xl font-en font-semibold transition-all duration-300 shadow-xl hover:-translate-y-1 hover:shadow-2xl">
-                    <i class="fab fa-apple text-3xl group-hover:scale-110 transition-transform"></i>
-                    <div class="text-left leading-tight">
-                        <span class="text-[10px] block text-slate-400 font-medium tracking-wide">Download on the</span>
-                        <span class="text-xl">App Store</span>
-                    </div>
+                <a href="#" class="inline-block transition-transform hover:-translate-y-1 hover:opacity-90 drop-shadow-xl">
+                    <img src="appstore_badge.svg" alt="Download on the App Store" class="h-14 sm:h-16 w-auto object-contain" onerror="this.src='https://placehold.co/180x56/0f172a/ffffff?text=App+Store'">
                 </a>
                 
                 <!-- Google Play -->
-                <a href="#" class="group flex items-center justify-center gap-3 bg-white text-dark px-8 py-4 rounded-2xl font-en font-semibold transition-all duration-300 shadow-xl hover:-translate-y-1 hover:shadow-2xl">
-                    <i class="fab fa-google-play text-3xl text-slate-700 group-hover:scale-110 transition-transform"></i>
-                    <div class="text-left leading-tight">
-                        <span class="text-[10px] block text-slate-500 font-medium tracking-wide">GET IT ON</span>
-                        <span class="text-xl">Google Play</span>
-                    </div>
+                <a href="#" class="inline-block transition-transform hover:-translate-y-1 hover:opacity-90 drop-shadow-xl">
+                    <img src="googleplay_badge.svg" alt="GET IT ON Google Play" class="h-14 sm:h-16 w-auto object-contain" onerror="this.src='https://placehold.co/180x56/0f172a/ffffff?text=Google+Play'">
                 </a>
             </div>
             
