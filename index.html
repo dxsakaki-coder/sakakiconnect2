@@ -28,7 +28,7 @@
                             dark: '#9f1239',    // 深みのあるローズ
                         },
                         secondary: '#059669', // 落ち着いたエメラルドグリーン
-                        dark: '#0f172a',      // より洗練されたダークネイビー
+                        dark: '0f172a',      // より洗練されたダークネイビー
                         light: '#fcfcfd',     // わずかに温かみのある白
                         surface: '#ffffff',
                     },
@@ -281,7 +281,7 @@
                         </div>
                         <h3 class="text-2xl md:text-3xl font-bold text-dark mb-6">パーソナライズされた<br>お知らせ配信</h3>
                         <p class="text-slate-600 mb-8 leading-loose">
-                            坂城町からの様々なお知らせを、手軽に確認できます。「重要」などのタブ切り替えや、キーワード検索、気になる情報のブックマーク登録が可能。あなたの属性に合わせた情報が届きます。
+                            坂城町からの様々なお知らせを、手軽に確認できます。「未読」「重要」などのタブ切り替えや、キーワード検索、気になる情報のブックマーク登録が可能。あなたの属性に合わせた情報が届きます。
                         </p>
                         <ul class="space-y-4">
                             <li class="flex items-start gap-3">
@@ -528,7 +528,7 @@
             
             <div class="flex flex-col sm:flex-row justify-center gap-5">
                 <!-- App Store -->
-                <a href="https://apps.apple.com/jp/app/%E3%81%95%E3%81%8B%E3%81%8D%E3%82%B3%E3%83%8D%E3%82%AF%E3%83%88/id6760407102" class="group flex items-center justify-center gap-3 bg-dark text-white px-8 py-4 rounded-2xl font-en font-semibold transition-all duration-300 shadow-xl hover:-translate-y-1 hover:shadow-2xl">
+                <a href="#" class="group flex items-center justify-center gap-3 bg-dark text-white px-8 py-4 rounded-2xl font-en font-semibold transition-all duration-300 shadow-xl hover:-translate-y-1 hover:shadow-2xl">
                     <i class="fab fa-apple text-3xl group-hover:scale-110 transition-transform"></i>
                     <div class="text-left leading-tight">
                         <span class="text-[10px] block text-slate-400 font-medium tracking-wide">Download on the</span>
@@ -537,13 +537,32 @@
                 </a>
                 
                 <!-- Google Play -->
-                <a href="https://play.google.com/store/apps/details?id=com.connect.sakaki" class="group flex items-center justify-center gap-3 bg-white text-dark px-8 py-4 rounded-2xl font-en font-semibold transition-all duration-300 shadow-xl hover:-translate-y-1 hover:shadow-2xl">
+                <a href="#" class="group flex items-center justify-center gap-3 bg-white text-dark px-8 py-4 rounded-2xl font-en font-semibold transition-all duration-300 shadow-xl hover:-translate-y-1 hover:shadow-2xl">
                     <i class="fab fa-google-play text-3xl text-slate-700 group-hover:scale-110 transition-transform"></i>
                     <div class="text-left leading-tight">
                         <span class="text-[10px] block text-slate-500 font-medium tracking-wide">GET IT ON</span>
                         <span class="text-xl">Google Play</span>
                     </div>
                 </a>
+            </div>
+            
+            <!-- QRコード表示エリア（PC・タブレット向け） -->
+            <div class="hidden md:flex flex-col items-center justify-center mt-12 bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 max-w-md mx-auto shadow-lg">
+                <p class="text-white font-bold mb-5 flex items-center gap-2">
+                    <i class="fas fa-qrcode"></i> スマートフォンで読み取ってダウンロード
+                </p>
+                <div class="flex gap-8">
+                    <!-- iOS用QR -->
+                    <div class="bg-white p-3 rounded-xl shadow-sm flex flex-col items-center hover:scale-105 transition-transform duration-300">
+                        <img src="qr_ios.png" onerror="this.src='https://placehold.co/120x120/ffffff/ce2b5e?text=App+Store'" alt="App Store QRコード" class="w-24 h-24 object-contain">
+                        <p class="text-[11px] text-slate-600 font-bold mt-2 font-en tracking-wider">iOS</p>
+                    </div>
+                    <!-- Android用QR -->
+                    <div class="bg-white p-3 rounded-xl shadow-sm flex flex-col items-center hover:scale-105 transition-transform duration-300">
+                        <img src="qr_android.png" onerror="this.src='https://placehold.co/120x120/ffffff/ce2b5e?text=Google+Play'" alt="Google Play QRコード" class="w-24 h-24 object-contain">
+                        <p class="text-[11px] text-slate-600 font-bold mt-2 font-en tracking-wider">Android</p>
+                    </div>
+                </div>
             </div>
             
             <div class="mt-16 pt-10 border-t border-white/20">
@@ -586,11 +605,11 @@
                 <div class="md:col-span-6 lg:col-span-3">
                     <h4 class="text-white font-en font-bold mb-6 tracking-widest text-sm uppercase">Links</h4>
                     <ul class="space-y-4 text-sm">
-                        <li><a href="https://www.town.sakaki.nagano.jp/" class="hover:text-primary-light transition-colors flex items-center gap-2"><i class="fas fa-external-link-alt text-[10px]"></i> 坂城町 公式ホームページ</a></li>
-                        <li><a href="https://apply.e-tumo.jp/town-sakaki-nagano-u/profile/userLogin" class="hover:text-primary-light transition-colors flex items-center gap-2"><i class="fas fa-external-link-alt text-[10px]"></i> ながの電子申請サービス</a></li>
-                        <li><a href="https://www.sakaki-connect.com/web/pages/terms-of-service" class="hover:text-primary-light transition-colors">利用規約</a></li>
-                        <li><a href="https://www.sakaki-connect.com/web/pages/privacy-policy" class="hover:text-primary-light transition-colors">プライバシーポリシー</a></li>
-                        <li><a href="https://www.sakaki-connect.com/web/faq" class="hover:text-primary-light transition-colors">よくある質問</a></li>
+                        <li><a href="#" class="hover:text-primary-light transition-colors flex items-center gap-2"><i class="fas fa-external-link-alt text-[10px]"></i> 坂城町 公式ホームページ</a></li>
+                        <li><a href="#" class="hover:text-primary-light transition-colors flex items-center gap-2"><i class="fas fa-external-link-alt text-[10px]"></i> ながの電子申請サービス</a></li>
+                        <li><a href="#" class="hover:text-primary-light transition-colors">利用規約</a></li>
+                        <li><a href="#" class="hover:text-primary-light transition-colors">プライバシーポリシー</a></li>
+                        <li><a href="#" class="hover:text-primary-light transition-colors">よくある質問</a></li>
                     </ul>
                 </div>
             </div>
