@@ -107,10 +107,11 @@
                 </div>
                 
                 <!-- デスクトップメニュー -->
-                <div class="hidden md:flex space-x-10 items-center">
+                <div class="hidden md:flex space-x-8 items-center">
                     <a href="#about" class="text-sm font-medium text-slate-600 hover:text-primary transition-colors duration-200">アプリについて</a>
                     <a href="#features" class="text-sm font-medium text-slate-600 hover:text-primary transition-colors duration-200">主な機能</a>
                     <a href="#screens" class="text-sm font-medium text-slate-600 hover:text-primary transition-colors duration-200">画面イメージ</a>
+                    <a href="【さかきコネクト】操作マニュアル_ver1.0.pdf" target="_blank" class="text-sm font-medium text-slate-600 hover:text-primary transition-colors duration-200 flex items-center gap-1"><i class="far fa-file-pdf"></i> 操作マニュアル</a>
                     <a href="#download" class="bg-dark hover:bg-slate-800 text-white px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 shadow-float hover:-translate-y-1">
                         ダウンロード
                     </a>
@@ -131,6 +132,7 @@
                 <a href="#about" class="text-lg font-medium text-slate-700 hover:text-primary transition">アプリについて</a>
                 <a href="#features" class="text-lg font-medium text-slate-700 hover:text-primary transition">主な機能</a>
                 <a href="#screens" class="text-lg font-medium text-slate-700 hover:text-primary transition">画面イメージ</a>
+                <a href="【さかきコネクト】操作マニュアル_ver1.0.pdf" target="_blank" class="text-lg font-medium text-slate-700 hover:text-primary transition flex items-center gap-2"><i class="far fa-file-pdf"></i> 操作マニュアル</a>
                 <a href="#download" class="mt-6 w-full max-w-xs bg-dark text-white px-6 py-4 rounded-full text-center font-bold shadow-lg">ダウンロード</a>
             </div>
         </div>
@@ -520,12 +522,12 @@
             
             <div class="flex flex-row flex-wrap justify-center gap-4 sm:gap-6 items-center">
                 <!-- App Store -->
-                <a href="https://apps.apple.com/jp/app/%E3%81%95%E3%81%8B%E3%81%8D%E3%82%B3%E3%83%8D%E3%82%AF%E3%83%88/id6760407102" class="inline-block transition-transform hover:-translate-y-1 hover:opacity-90 drop-shadow-xl">
+                <a href="#" class="inline-block transition-transform hover:-translate-y-1 hover:opacity-90 drop-shadow-xl">
                     <img src="appstore_badge.svg" alt="Download on the App Store" class="h-14 sm:h-16 w-auto object-contain" onerror="this.src='https://placehold.co/180x56/0f172a/ffffff?text=App+Store'">
                 </a>
                 
                 <!-- Google Play -->
-                <a href="https://play.google.com/store/apps/details?id=com.connect.sakaki" class="inline-block transition-transform hover:-translate-y-1 hover:opacity-90 drop-shadow-xl">
+                <a href="#" class="inline-block transition-transform hover:-translate-y-1 hover:opacity-90 drop-shadow-xl">
                     <img src="googleplay_badge.svg" alt="GET IT ON Google Play" class="h-14 sm:h-16 w-auto object-contain" onerror="this.src='https://placehold.co/180x56/0f172a/ffffff?text=Google+Play'">
                 </a>
             </div>
@@ -550,10 +552,23 @@
             </div>
             
             <div class="mt-16 pt-10 border-t border-white/20">
-                <p class="text-white/80 text-sm mb-5">パソコン・タブレットからご覧の方はこちら</p>
-                <a href="https://www.sakaki-connect.com/web/" target="_blank" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-3 rounded-full font-bold transition-all duration-300 backdrop-blur-sm">
-                    WEBブラウザ版を開く <i class="fas fa-arrow-right text-sm"></i>
-                </a>
+                <div class="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12">
+                    <div class="flex flex-col items-center">
+                        <p class="text-white/80 text-sm mb-4">パソコン・タブレットからご覧の方はこちら</p>
+                        <a href="https://www.sakaki-connect.com/web/" target="_blank" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-3 rounded-full font-bold transition-all duration-300 backdrop-blur-sm">
+                            WEBブラウザ版を開く <i class="fas fa-arrow-right text-sm"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="hidden md:block w-px h-16 bg-white/20"></div>
+                    
+                    <div class="flex flex-col items-center">
+                        <p class="text-white/80 text-sm mb-4">アプリの詳しい使い方が知りたい方はこちら</p>
+                        <a href="【さかきコネクト】操作マニュアル_ver1.0.pdf" target="_blank" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-3 rounded-full font-bold transition-all duration-300 backdrop-blur-sm">
+                            <i class="far fa-file-pdf text-lg"></i> 操作マニュアル（PDF）
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -582,6 +597,7 @@
                         <li><a href="#about" class="hover:text-primary-light transition-colors">アプリについて</a></li>
                         <li><a href="#features" class="hover:text-primary-light transition-colors">主な機能</a></li>
                         <li><a href="#screens" class="hover:text-primary-light transition-colors">画面イメージ</a></li>
+                        <li><a href="【さかきコネクト】操作マニュアル_ver1.0.pdf" target="_blank" class="hover:text-primary-light transition-colors flex items-center gap-2"><i class="far fa-file-pdf text-xs"></i> 操作マニュアル</a></li>
                     </ul>
                 </div>
                 
